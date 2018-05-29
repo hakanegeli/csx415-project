@@ -64,16 +64,16 @@ The Rmarkup file `05-training-and-validation.Rmd` takes the features that we hav
 The program builds several classification models including:
 
 * Decision Tree (**rpart** and **raprt2**),
-* Linear Discriminant Analysis with Stepwise Feature Selection (**stepLDA**)$^1$,
-* Neural Networks Using Model Averaging (**avNNet**)$^1$ which uses different initialization paramters and averages out the results,
+* Linear Discriminant Analysis with Stepwise Feature Selection (**stepLDA**)**,
+* Neural Networks Using Model Averaging (**avNNet**)** which uses different initialization paramters and averages out the results,
 * Multinomial Log-linear Regression Model via Neural Networks (**multinom**),
 * Random Forest (**rf**),
-* Single-hidden-layer Neural Network (**nnet**)$^1$ with 20 nodes,
+* Single-hidden-layer Neural Network (**nnet**)** with 20 nodes,
 * Support Vector Machines with Linear Kernel (**svmLinear**)
 * Support Vector Machines with Radial Basis Function Kernel (**svmRad**)
 * Support Vector Machines with Polynomial Kernel (**svmPoly**)
 
-$^1$ - We have commented these model out because of the time it takes to train them.
+** - We have commented these model out because of the time it takes to train them.
 
 and performes a repeated K-fold cross-validation totaling 10 iterations (5 folds repeated twice) for each model. For each model Accuracy and Kappa values and the standard deviations for these performance metricies are also calculated and tabularized for comparison.
 
