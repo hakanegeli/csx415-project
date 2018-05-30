@@ -193,7 +193,7 @@ Launch RStudio and set your working directory to the project folder.
 ```r
 setwd("~/R/Projects/csx415-project")
 ```
-Now we need to restore the libraries we need using packrat. Type the following commands at the R Console:
+Now we need to restore the libraries using packrat. Type the following commands at the R Console:
 
 ```r
 #install packrat if you haven't already done so
@@ -208,8 +208,14 @@ If packrat successfully restored the libraries, we strongly suggest you exit out
 setwd("~/R/Projects/csx415-project")
 source("packrat/init.R")
 ```
-All the source files (.R and .Rmd) are located under the `src` folder. You can check out the ASSETS.md file to lear more about each of the source files and what they contain!
+All the source files (.R and .Rmd) are located under the `src` folder. You can check out the ASSETS.md file to learn more about each of the source files and what they contain!
 
+We recommend that you run the `model-training-and-validation.R` file (which takes about 5 minutes to run). This runs the training and the evaluation and you can see the results on the console. To do this, type the following command on the console:
+
+```r
+source("src/model-training-and-validation.R")
+```
+You should see console logs as the model training runs and a summary of the evaluation at the end of the run.
 
 ### Using Packrat
 
@@ -238,7 +244,7 @@ source("packrat/init.R")
 ```
 #### Step 3
 
-Run the `model-training-and-validation.R` file:
+Run the `model-training-and-validation.R` file (which takes about 5 minutes to run):
 
 ```r
 source("src/model-training-and-validation.R")
