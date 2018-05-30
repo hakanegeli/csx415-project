@@ -117,14 +117,14 @@ setwd("~/R/Projects/csx415-model")
 
 Install the package.
 
-If you have the source code copied to the the `pkgs folder` then type the following:
+If you have the source code copied to the the `pkgs` folder then type the following:
 
 ``` r
 # Install the released version from source (/pkgs)
 install.packages("pkgs/CreditLimitModel", repos = NULL, type = "source")
 ```
 
-If you do not have the source code in the `pkgs folder, or if you like to install it directly from GitHub type the following command:`
+If you do not have the source code in the `pkgs` folder, or if you like to install it directly from GitHub type the following command:`
 
 ``` r
 # using devtools:
