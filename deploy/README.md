@@ -103,7 +103,7 @@ Create a new folder under `~/R/Projects` called `csx415-model`. This is where we
 
 #### Step 2
 
-If you have already followed instructions to install the Web Applicatin and have the `csx415-app` folder then copy the entire `pkgs` folder from the `csx415-app` into the `csx415-model` folder (or wherever you have created your new directory). If you do not have the `csx415-app` downloaded you can skip this step and follow the instructions to install the package from GitHub using devtools in **Step 4**!
+If you have already followed instructions to install the Web Applicatin and have the `csx415-app` folder then copy the entire `pkgs` folder from the `csx415-app` into the `csx415-model` folder (or wherever you have created your new directory). If you do not have the `csx415-app` downloaded you can skip this step and later follow the instructions to install the package from GitHub using devtools in **Step 4**!
 
 #### Step 3
 
