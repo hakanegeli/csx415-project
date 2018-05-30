@@ -129,8 +129,8 @@ If you do not have the source code in the `pkgs` folder, or if you like to insta
 ``` r
 # using devtools:
 
-# install the devtools package if you already don't have it
-# install.packages("devtools")
+# install the devtools package if you don't have it by uncommenting the line below
+#install.packages("devtools")
 
 # downlaod and install the package directly from the GitHub repository
 devtools::install_github("hakanegeli/csx415-project/pkgs/CreditLimitModel")
