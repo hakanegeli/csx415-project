@@ -77,7 +77,7 @@ When you are finished, you can click on the stop icon on the R Console to stop r
 Follow Steps 1 and 2 from above if you haven't already done so.
 
 #### Step 3
-First, make sure you are able to run Rscript and you have the correct version of R installed. Type `Rscript --version` on the R command line in your terminal and you should see a result similart to this:
+First, make sure you are able to run Rscript and you have the correct version of R installed. From a command line in your terminal (in RStudio click on the Terminal tab, or from the Tools menu either select Terminal/Move Focus to Terminal or Terminal/New Terminal) type `Rscript --version` and you should see a result similart to this:
 
 ``` r
 $ Rscript --version
@@ -103,7 +103,7 @@ Create a new folder under `~/R/Projects` called `csx415-model`. This is where we
 
 #### Step 2
 
-Copy the entire `pkgs` folder from the `csx415-project` into the `csx415-model` folder (or wherever you have created your new directory).
+If you have already followed instructions to install the Web Applicatin and have the `csx415-app` folder then copy the entire `pkgs` folder from the `csx415-app` into the `csx415-model` folder (or wherever you have created your new directory). If you do not have the `csx415-app` downloaded you can skip this step and follow the instructions to install the package from GitHub using devtools!
 
 #### Step 3
 
@@ -117,16 +117,25 @@ setwd("~/R/Projects/csx415-model")
 
 Install the package.
 
+If you have the source code copied to the the `pkgs folder` then type the following:
+
 ``` r
 # Install the released version from source (/pkgs)
 install.packages("pkgs/CreditLimitModel", repos = NULL, type = "source")
-
-# Or using devtools:
-# install.packages("devtools")
-devtools::install("pkgs/CreditLimitModel")
-# or from github if you do not have the CreditLimitModel source locally under the pkgs folder
-# devtools::install_github("hakanegeli/csx415-project/pkgs/CreditLimitModel")
 ```
+
+If you do not have the source code in the `pkgs folder, or if you like to install it directly from GitHub type the following command:`
+
+``` r
+# using devtools:
+
+# install the devtools package if you already don't have it
+# install.packages("devtools")
+
+# downlaod and install the package directly from the GitHub repository
+devtools::install_github("hakanegeli/csx415-project/pkgs/CreditLimitModel")
+```
+
 After the installation, please refer to the Package help for further information on how to use the library in your code.
 
 ``` r
