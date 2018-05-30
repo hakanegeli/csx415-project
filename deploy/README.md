@@ -117,18 +117,16 @@ setwd("~/R/Projects/csx415-model")
 
 Install the package.
 
-If you have the source code copied to the the `pkgs` folder then type the following:
+From Source: If you have the source code copied to the the `pkgs` folder then type the following:
 
 ``` r
 # Install the released version from source (/pkgs)
 install.packages("pkgs/CreditLimitModel", repos = NULL, type = "source")
 ```
 
-Or from GitHub; if you do not have the source code in the `pkgs` folder, or if you like to install it directly from GitHub type the following command:`
+Or from GitHub: If you do not have the source code in the `pkgs` folder, or if you like to install it directly from GitHub type the following command:`
 
 ``` r
-# using devtools:
-
 # install the devtools package if you don't have it by uncommenting the line below
 #install.packages("devtools")
 
@@ -153,7 +151,7 @@ print(predictions)
 
 ## Installation - Project
 
-If you are interested in the project and want to rebuild it using the source code, you can download it to your computer by clonning it using `git` or by downloading the `packrat` bundle.
+If you are interested in the project and want to rebuild it using the source code, you can download it to your computer by using `git` or by downloading the `packrat` bundle.
 
 ### Using Git
 
